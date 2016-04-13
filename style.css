@@ -1,8 +1,15 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,vietnamese);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
 @font-face {
     font-family: OpenSan-ExtraBold;
-    src: url(fonts/OpenSans-ExtraBold.woff);
+    src: url(fonts/OpenSans-ExtraBold);
+}
+@font-face {
+    font-family: OpenSans-Italic;
+    src: url(fonts/OpenSans-Italic);
+}
+@font-face {
+    font-family: OpenSans-Semibold;
+    src: url(fonts/OpenSans-Semibold);
 }
 *{
 	margin:0;
@@ -22,33 +29,95 @@ a:hover, a:focus, a:active{
 	
 }
 .header .container {
-	padding: 16px 0;
+	padding: 16px 0 0 0;
 }
-.header h1{
+.header h1, .footer1 h3{
 	margin:0;
 }
-.header	h1 a{
+.header	h1 a, .footer1 h3{
 		color:#fff;
 		font-size:30px;
-		font-family: 'Open Sans', sans-serif;
+		font-family: OpenSan-ExtraBold;
 		text-transform:uppercase;
-		text-decoration:none;	
+		text-decoration:none;
+		font-weight:bold;		
 }
-.header	h1 a span{
+.header	h1 a span, .footer1 h3 span{
 	font-size:25px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: OpenSans-Italic;
 	text-transform:none;
 	padding-left:10px;
+}
+.menuA1 li{
+	position:relative;
+	padding-bottom:16px;
 }
 .menuA1 li a{
 	color:#fff;
 	text-decoration:none;
-	font-family: 'Open Sans', sans-serif;
+	font-family: OpenSans-Semibold;
 	padding:3px 15px;
 	margin-top:10px;
 	border: 1px solid rgba( 0, 0, 0, 0);
 	border-radius: 4px;
 	font-size:13px;
+}
+.menuA1 li ul{
+	display:none;
+	background:#e2534b;
+	padding:5px;
+	border-radius:4px;
+	position:absolute;
+	z-index:30;
+	width:200%;
+	margin-top:15px;
+}
+.menuA1 li ul:before{
+	border-bottom:10px solid #e2534b;
+	content:"";
+	border-left:10px solid rgba( 0, 0, 0, 0);
+	border-right:10px solid rgba( 0, 0, 0, 0);
+	position:absolute;
+	top:-10px;
+	left:15px;
+}
+.menuA1 li:hover ul{
+	display:block;
+}
+.menuA1 li ul li{
+	list-style:none;
+	margin-top:5px;
+	background:#e5655d;
+	padding:5px;
+	border-radius:4px;
+}
+.menuA1 li ul li:hover{
+	background:#76c7c0;
+}
+.menuA1 li ul li a{
+	list-style:none;
+	background:rgba( 0, 0, 0, 0);
+	box-shadow:0%;
+	font-size:16px;
+	font-family:OpenSans-Italic;
+	padding:0;
+}
+.menuA1 li ul li a:hover{
+	box-shadow:none;
+	background:#76c7c0;
+}
+.menuA1 li ul li:first-child{
+	margin-top:0;	
+}
+.menuA1 li ul li:first-child a{	
+	box-shadow:none;
+	background:rgba( 0, 0, 0, 0);
+	font-size:16px;
+	font-family:OpenSans-Italic;
+}
+.menuA1 li ul li a i{
+	padding-right:10px;
+	font-size:16px;
 }
 .fa-angle-down{
 	padding-right:8px;
@@ -114,6 +183,7 @@ a:hover, a:focus, a:active{
 	font-size:16px;
 	padding:8px 30px;
 	border-radius:8px;
+	font-family:OpenSans-Italic;
 }
 .slide1c{
 	position:absolute;
@@ -132,6 +202,9 @@ a:hover, a:focus, a:active{
 }
 .fa-angle-double-left, .fa-angle-double-right{
 	font-size:40px;
+}
+.slide1c:hover, .slide2c:hover{
+	color:#fff;
 }
 .slide1{
 	padding-bottom:50px;
@@ -170,14 +243,14 @@ a:hover, a:focus, a:active{
  .title h2{
 	 font-size:30px;
 	 color:#7f8c8c;
-	 font-family: 'Open Sans', sans-serif;
+	 font-family: OpenSans-Semibold;
 	 margin:0;
  }
  .title p{
-	 font-size:13px;
+	 font-size:16px;
 	 color:#777777;
 	 margin-bottom:0;
-	 font-family: 'Open Sans', sans-serif;
+	 font-family: OpenSans-Italic;
  }
  .title a{
 	 font-size:20px;
@@ -191,6 +264,7 @@ a:hover, a:focus, a:active{
 	 margin-right:15px;
 	 box-shadow: 0 3px #e2534b;
 	 text-decoration:none;
+	 font-family:OpenSans-Semibold;
  }
  .option{
 	 padding-top:50px;
@@ -213,20 +287,20 @@ a:hover, a:focus, a:active{
 	 color:#76c7c0;
  }
  .option1 h3 a{
-	  font-size:16px;
+	 font-size:16px;
 	 color:#7f8c8c;
-	 font-family:'Open Sans', sans-serif;
+	 font-family:OpenSans-Semibold;
 	 margin-bottom:36px;
 	 margin-top:16px;
  }
  .option1 p{
-	 font-size:13px;
+	 font-size:16px;
 	 color:#777;
-	 font-family:'Open Sans', sans-serif;
+	 font-family:OpenSans-Italic;
 	 line-height:26px;
  }
  .click1a1{
-	 font-size:14px;
+	 font-size:16px;
 	 padding:15px 60px;
 	 background:#76c7c0;
 	 color:#fff;
@@ -235,6 +309,7 @@ a:hover, a:focus, a:active{
 	 position:absolute;
 	 bottom:-7%;
 	 left:14.5%;
+	 font-family:OpenSans-Semibold;
  }
  .click1a1:hover{
 	 text-decoration:none;
@@ -255,7 +330,6 @@ a:hover, a:focus, a:active{
 	 width:100%;
 	 float:left;
 	 overflow:hidden;
-	 padding-top:70px;
 	 text-align:center;
  }
  .content2 h2{
@@ -263,32 +337,19 @@ a:hover, a:focus, a:active{
 	 color:#e1524b;
 	 margin:0;
 	 padding-bottom:15px;
+	 font-family:OpenSans-Semibold;
  }
  .content2 p{
-	 font-size:13px;
+	 font-size:16px;
 	 color:#777;
 	 padding-bottom:240px;
+	 font-family:OpenSans-Italic;
  }
- /* slide 
- .top_slider{
-	 margin-top:180px;
+ .content4{
+	 background:url("images/vien.png") no-repeat;
+	 padding-top:70px;
+	 background-position: 30% -2%;
  }
-.roundabout-moveable-item {
-	height: 400px;
-	width: 320px;
-	cursor: pointer;
-	display:block;
-}
-
-.roundabout-moveable-item img {
-	height: 100%;
-	width: 100%;
-}
-
-.roundabout-in-focus {
-	cursor: auto;
-}
-*/
 .conten-slide, .content3{
 	width:100%;
 	float:left;
@@ -329,14 +390,15 @@ a:hover, a:focus, a:active{
 	background:#7f8c8c;
 }
 .content3{
-	padding-top:200px;
+	padding-top:225px;
 	overflow:hidden
 }
-.content3 h3{
+.content3 h3, .partner h3{
 	color:#7f8c8c;
 	font-size:16px;
 	margin-bottom:40px;
 	font-weight:bold;
+	font-family:OpenSan-ExtraBold;
 }
 .content3 ul{
 	list-style:none;
@@ -346,8 +408,9 @@ a:hover, a:focus, a:active{
 }
 .content3 ul li a{
 	text-decoration:none;
-	font-size:13px;
+	font-size:16px;
 	color:#777;
+	font-family:OpenSans-Italic;
 }
 .content3 ul li a i{
 	color:#e1524b;
@@ -356,11 +419,12 @@ a:hover, a:focus, a:active{
 .content3 p{
 	margin-top:20px;
 	color:#777;
-	font-size:13px;
+	font-size:16px;
 	padding-bottom:50px;
 	line-height:26px;
+	font-family:OpenSans-Italic;
 }
-.content3 p a{
+.content3 p a, .content3 p ins{
 	color:#e1524b;
 }
 .custom-ct{
@@ -370,7 +434,8 @@ a:hover, a:focus, a:active{
 .custom-ct i{
 	color:#777;
 	line-height:26px;
-	font-size:13px;
+	font-size:16px;
+	font-family:OpenSans-Italic;
 }
 .content3 .person{
 	font-size:16px;
@@ -378,4 +443,137 @@ a:hover, a:focus, a:active{
 	color:#777;
 	padding-left:25%;
 }
- 
+.partner{
+	position:relative;
+}
+.partner h3{
+	line-height:4px;
+	margin-top:0;
+	padding-right:10%;
+	margin-bottom:54px;
+}
+.partner h3 span{
+	z-index:2;
+	padding:0 30px 0 0;
+	background:#f3f3f3;
+	font-family:OpenSan-ExtraBold;
+}
+.partner h3:after{
+	border-bottom:1px solid #e1e2e2;
+	content:"";
+	display:block;	
+}
+.partner .item img{
+	width:100%;
+	padding:30px 35px;
+	background:#fff;
+	border-radius:8px;
+	
+}
+.partner .slide1c, .partner .slide2c{
+	background:#98a3a3;
+	box-shadow:0px 3px #7f8c8c;
+	border-radius:4px;
+	padding:7px 14px;
+	font-size:18px;
+}
+.partner .slide1c:hover, .partner .slide2c:hover{
+	background:#e8645a;
+	box-shadow:0px 3px #e2534b;
+	color:#fff;
+}
+.partner .slide1c{
+	position:absolute;
+	top:-18px;
+	left:91.7%;
+}
+.partner .slide2c{
+	position:absolute;
+	top:-18px;
+	right:0%;
+}
+.footer{
+	background:#76c7c0;
+	width:100%;
+	float:left;
+	overflow:hidden;
+}
+.footer1{
+	background: url("images/vien.png") no-repeat;
+	width:100%;
+	float:left;
+	overflow:hidden;
+	padding:48px 0;
+	background-position: 30% -2%;
+}
+.footer1 p{
+	color:#fff;
+	font-size:16px;
+	margin:28px 0 0 0;
+	line-height:24px;
+	font-family:OpenSans-Italic;
+}
+.footer1 p i{
+	font-size:17px;
+	padding-left:15px;
+	font-weight:bold;
+}
+.footer1 .col-md-2 h3{
+	font-size:20px;
+	color:#497e79;
+	margin-top:10px;
+	font-weight:bold;
+}
+.footer1 .col-md-2 ul{
+	list-style:none;
+	margin-top:28px;
+	padding-left:15%;
+}
+.footer1 .col-md-2 ul li{
+	line-height:24px;
+}
+.footer1 .col-md-2 ul li a{
+	color:#fff;
+	font-size:16px;
+	transition:0.3s;
+	text-decoration:none;
+	font-family:OpenSans-Italic;
+}
+.footer1 .col-md-2 ul li a i{
+	padding-right:10px;
+	color:#fff;
+}
+.footer1 .col-md-2 ul li a:hover{
+	padding-left:10px;
+	color:#e8645a;
+}
+.footer1 h3 i{
+	text-transform:none;
+	padding-right:10px;
+	font-weight:400;
+}
+.footer1 p span{
+	color:#497e79;
+}
+.footer1 img{
+	margin-top:30px;
+	border-radius:4px;
+}
+.footer2{
+	background:#6ab3ac;
+	width:100%;
+	overflow:hidden;
+	color:#fff;
+	padding:14px;
+}
+.footer2 p{
+	margin:0;
+	padding:5px;
+	font-family:OpenSans-Italic;
+	font-size:16px;
+}
+.footer2 .col-md-5 i{
+	float:right;
+	padding-left:20px;
+	font-size:30px;
+}
