@@ -1,0 +1,89 @@
+@media only screen and (max-width: 500px) {
+  .header .container{
+	  padding:0 15px;
+  }
+  .header{
+	  position:relative;
+  }
+  .header  h1 a{
+	 position:absolute;
+	 top:5px;
+  }
+  .navbar-toggle{
+	  padding:0;
+	  margin:0;
+  }
+  .fa-home{
+	  font-size:35px;
+	  color:#E8645A;		
+  }
+  .search{
+	  width:80%;
+	  margin:0 5px 10px 15px;
+	  border:1px solid gray;
+	  border-radius:4px;
+	  padding:3px 5px;
+  }
+  .search:hover{
+	  width:80%;
+  }
+  .slide3, .menuA1 li ul, .click1a1{
+	  position:static;
+  }
+  .menuA1{
+	  margin-left:0;
+	  margin-right:0;
+  }
+  .menuA1 li{
+	  padding:0 ;
+  }
+  .menuA1 li ul{
+	  width:100%;
+  }
+  .menuA1 li ul::before{
+	  border-bottom:0;
+  }
+  .title{
+	  margin-top:15px;
+  }
+  .option{
+	  padding-top:15px;
+	  padding-bottom:5px;
+  }
+  .title{
+	  text-align:center;
+  }
+  .title a{
+	  margin:10px 18% 10px 0;
+  }
+  .option1{
+	  margin-bottom:15px;
+	  height:auto;
+	  padding:15px 15px 30px 15px;
+	  overflow:hidden;
+  }
+  .option1 p{
+	  padding-bottom:10px;
+  }
+  .content2 p{
+	  padding-bottom:15px;
+  }
+  .content3{
+	  padding-top:0;
+  }
+  .partner .slide1c{
+	  left:64%;
+  }
+  .partner h3::after{
+	  border:none;
+  }
+  .partner .item .col-md-2{
+	  margin-bottom:5px;
+  }
+  .partner .item img{
+	  padding:20px 40px;
+  }
+  .footer1{
+	  background-position:30% -0.1%;
+  }
+}
