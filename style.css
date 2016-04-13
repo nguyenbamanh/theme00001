@@ -34,6 +34,9 @@ a:hover, a:focus, a:active{
 .header h1, .footer1 h3{
 	margin:0;
 }
+.header h1{
+	line-height:26px;
+}
 .header	h1 a, .footer1 h3{
 		color:#fff;
 		font-size:30px;
@@ -57,7 +60,7 @@ a:hover, a:focus, a:active{
 	text-decoration:none;
 	font-family: OpenSans-Semibold;
 	padding:3px 15px;
-	margin-top:10px;
+	line-height:26px;
 	border: 1px solid rgba( 0, 0, 0, 0);
 	border-radius: 4px;
 	font-size:13px;
@@ -131,8 +134,7 @@ a:hover, a:focus, a:active{
 	background:#e5655d;
 }
 .header .col-md-1{
-	margin-top:10px;
-	
+	line-height:26px;
 }
 .search{
 	width:0;
