@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 970px){
 	.header1{
 		padding-top:0;
 		padding-bottom:0;
@@ -10,7 +10,7 @@
 		padding-bottom:10px;
 	}
 	.slogen{
-		left:18%;
+		left:19%;
 		top:22%;
 	}
 	.title a{
