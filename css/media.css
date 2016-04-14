@@ -191,6 +191,9 @@
 	  height:4px;
 	  background:#fff;
   }
+  .clic{
+	  margin-left:10px;
+  }
   .search{
 	  width:80%;
 	  margin:0 5px 10px 15px;
@@ -230,6 +233,9 @@
   .title .col-md-2{
 	  overflow:hidden;
 	  padding:10px;
+  }
+  .option .col-md-3{
+	  padding-bottom:15px;
   }
   .title a{
 	  padding:10px 40px;
