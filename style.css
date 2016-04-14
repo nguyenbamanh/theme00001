@@ -248,7 +248,7 @@ a:hover, a:focus, a:active{
  .title{
 	 background:#ececec;
 	 overflow:hidden;
-	 padding: 10px 15px;
+	 padding: 22px 35px;
  }
  .title h2{
 	 font-size:30px;
@@ -265,7 +265,7 @@ a:hover, a:focus, a:active{
  }
  .title a{
 	 font-size:20px;
-	 padding:18px 40px;
+	 padding:14px 40px;
 	 background:#e8645a;
 	 color:#fff;
 	 border-radius:8px;
